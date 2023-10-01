@@ -1,0 +1,99 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                       String             @id @unique @default(uuid())
+  name String?
+  password String?
+  birthDate String?
+  email String?
+  ava String?
+  phoneNumber Int?
+  address String?
+  type String? 
+  
+}
+model Challenge {
+  id                       String             @id @unique @default(uuid())
+  name String?
+  date DateTime?
+  user_id  String?
+  description String?
+  campaign_id String?
+}
+model Detail_challenge {
+  id                       String             @id @unique @default(uuid())
+  user_id String?
+  finish_date DateTime?
+  point Int?
+}
+model Post {
+  id                       String             @id @unique @default(uuid())
+  date DateTime?
+  user_id String?
+  title String?
+  content String?
+  images_o_videos String?
+  challenge_id Int?
+}
+model Comment {
+  id                       String             @id @unique @default(uuid())
+  time DateTime?
+  content String?
+  user_id String?
+}
+model Voucher {
+  user_id String?
+  date DateTime?
+  id                       String             @id @unique @default(uuid())
+  percent Int?
+  amount Int?
+  point Int?
+  expiredate DateTime?
+}
+model Detail_voucher {
+  id                       String             @id @unique @default(uuid())
+  user_id String?
+  voucher_id String?
+  redeem DateTime?
+  used Int?
+  point Int?
+}
+model Campaign {
+  id                       String             @id @unique @default(uuid())
+  name String?
+  level String?
+  mem_count Int?
+  description String?
+  note String?
+}
+model Rank {
+  id                       String             @id @unique @default(uuid())
+  name String?
+  scorce Int?
+  ratio Float?
+}
+model Detail_rank{
+  id                       String             @id @unique @default(uuid())
+  rank_id String?
+  user_id String?
+  total_point String?
+  redeem_point String?
+}
+model Schedule {
+  id                       String             @id @unique @default(uuid())
+  name String?
+  date String?
+  start String?
+  content String?
+  campaign_id String?
+}
