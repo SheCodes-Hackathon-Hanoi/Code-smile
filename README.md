@@ -14,7 +14,7 @@ Our team have 5 members and we currently students in National Economics Universi
 
 
 ## Entity Relationship Diagram (ERD)
-
+https://drive.google.com/file/d/1mtbXehnVKcHn4N7c5hTa0AVCK0Ij-DK1/view?fbclid=IwAR3hS9jJnFjBZVlV2GG64AVZkrB4fOIxRcD0uOlEcuVpW7pvIHjHjNcs64I
 
 
 ## Link figma:
