@@ -8,11 +8,10 @@
 Our team have 5 members and we currently students in National Economics University
 
 ## Tech stack
-1. Front-end: HTML, CSS (Bootstrap), JavaScript=
+1. Front-end: HTML, CSS (Bootstrap), JavaScript
 2. Back-end: Typescritpt
 3. Database: Mysql
 
-## Database
 
 ## Entity Relationship Diagram (ERD)
 
